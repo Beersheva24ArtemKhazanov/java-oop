@@ -1,15 +1,10 @@
-package shapes;
+package telran.shapes;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import telran.shapes.Canvas;
-import telran.shapes.Rectangle;
-import telran.shapes.Shape;
-import telran.shapes.Square;
-
-public class ShapeTest {
+public class ShapesTest {
     @Test
     void rectanglePerimeterAndSquareTests() {
         Rectangle rectangle = new Rectangle(32, 24);
