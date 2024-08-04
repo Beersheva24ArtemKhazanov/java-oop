@@ -32,4 +32,16 @@ public class Canvas implements Shape {
         return shapes;
     }
 
+    public int count() {
+        int res = 0;
+        for (Shape shape : shapes) {
+            res++;
+            if (shape instanceof Canvas) {
+                Canvas innerShapes = (Canvas)shape;
+                res += innerShapes.count();
+            }
+        }
+        return res;
+    }
+
 }
